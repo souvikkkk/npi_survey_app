@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NPI Survey Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h2>Enter Time to Predict Best Doctors</h2>
+    <form action="/predict" method="post">
+        <label for="time">Time (HH:MM):</label>
+        <input type="text" id="time" name="time" required>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
